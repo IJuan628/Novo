@@ -1,0 +1,7 @@
+Ref_Arquivo= open("/Users/Win 10/Downloads/TcCLB.506717.80.fasta") #Abre o arquivo fazendo uma associacao com Ref_Arquivo
+Arquivo_fasta= Ref_Arquivo.read() # le o arquivo
+cabecalho= Arquivo_fasta.split('\n')[0][1:]
+sequencia= ''.join(Arquivo_fasta.split('\n')[1:])
+print("Identificador: %s"%cabecalho)
+print("Sequencia: %s"%sequencia)
+Ref_Arquivo.close()
